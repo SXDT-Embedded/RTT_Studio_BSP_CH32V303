@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "ch32v30x.h": "c",
+        "rtconfig.h": "c",
+        "drv_usart.h": "c"
+    }
+}

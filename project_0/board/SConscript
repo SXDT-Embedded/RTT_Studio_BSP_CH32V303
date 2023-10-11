@@ -1,0 +1,30 @@
+'''
+Author       : stark1898y 1658608470@qq.com
+Date         : 2023-10-11 14:26:05
+LastEditors  : stark1898y 1658608470@qq.com
+LastEditTime : 2023-10-11 15:25:25
+FilePath     : \1.0.8(offline)\project_0\board\SConscript
+Description  :
+
+Copyright (c) 2023 by yzy, All Rights Reserved.
+'''
+from building import *
+
+cwd     = GetCurrentDir()
+src     = Split('''
+board.c
+software_irq.c
+''')
+CPPPATH = [cwd]
+
+group = DefineGroup('Board', src, depend = [''], CPPPATH = CPPPATH)
+
+objs = [group]
+
+list = os.listdir(cwd)
+
+for item in list:
+    if os.path.isfile(os.path.join(cwd, item, 'SConscript')):
+        objs = objs + SConscript(os.path.join(item, 'SConscript'))
+
+Return('objs')
