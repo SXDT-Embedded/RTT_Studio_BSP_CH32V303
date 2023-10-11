@@ -3,12 +3,12 @@ board:
   buy_url_global: N/A
   debug_interface: 私有串行两线接口
   debugger: WCH-LINK
-  description_en: 'CH32V303RCT6 is a development board based on the 32bit RISC-V core
+  description_en: 'CH32V303 is a development board based on the 32bit RISC-V core
     launched by WCH. The highest frequency is 144Mhz. '
-  description_zh: CH32V303RCT6 是 WCH 推出的一款基于 RISC-V 内核的开发板，最高主频为 144Mhz。
+  description_zh: CH32V303 是 WCH 推出的一款基于 RISC-V 内核的开发板，最高主频为 144Mhz。
   emulator_machine: ''
   large_image: documents/images/board2.jpg
-  name: CH32V303RCT6
+  name: CH32V303
   price_cn: N/A CNY
   price_global: N/A USD
   sale_contact_cn: http://www.wch.cn
@@ -17,7 +17,7 @@ board:
   vendor: WCH
   version: 1.0.8
 chip:
-  chip_name: CH32V303RCT6
+  chip_name: CH32V303
   clock_source: HSE
   device_vendor: WCH
   family_name: CH32
@@ -43,9 +43,9 @@ docs:
   title: Datasheet
 example_projects: []
 features:
-- CH32V303RCT6：main frequency 144MHz, FLASH and RAM can be configured
+- CH32V303：main frequency 144MHz, FLASH and RAM can be configured
 features_zh:
-- MCU：CH32V303RCT6，主频 144MHz，FLASH和RAM可配置
+- MCU：CH32V303，主频 144MHz，FLASH和RAM可配置
 pkg_type: Board_Support_Packages
 pkg_vendor: WCH
 pkg_version: 1.0.8
